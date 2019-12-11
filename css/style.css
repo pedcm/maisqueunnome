@@ -11,6 +11,15 @@
 
 }
 
+@font-face {
+    font-family: 'syne_bold';
+    src: url('../fonts/syne/syne-bold-webfont.woff2') format('woff2'),
+         url('../fonts/syne/syne-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* Liberation Sans */
 
 @font-face {
@@ -27,46 +36,43 @@
 }
 
 
-/* Código relacionado con fullpage.js. Parte do código baséase en exemplos deste proxecto. */
+/* Configuración da web */
 
 .section {
     text-align: left;
     overflow: hidden;
-    
 }
 
 #videofondo {
-    position: absolute;
+    position: relative;
     right: 0;
     bottom: 0;
     top: 0;
-    right: 0;
+    right:0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-size: 100% 100%;
-    background-color: palevioletred;
-    background-image: /* o vídeo */;
+    background-color: black;
+    background-image: ;
     background-position: center center;
     background-size: contain;
     object-fit: cover;
     z-index: 3;
-
 }
 
 
-#section0 .capa {
+.capa {
     position: absolute;
     z-index: 5;
     left: 0;
-    bottom: 5vh;
-    margin-left: 4vw;
-    margin-right: 4vw;
-    margin-top: 0.5vh;
-    width: 92vw;       
+    bottom: 0.5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 0.5vh !important;
+    width: auto;
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
-    
 }
 
 #section0 {
@@ -75,19 +81,70 @@
 
 video::-webkit-media-controls {
     display:none !important;
-
 }
 
-/* Código propio */
+#section1 .capa,
+#section2 .capa,
+#section3 .capa {
+    position: absolute;
+    top: 0vh;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+.capa > h2 {
+    color: white;
+    font-size: 6.5vw;
+    position: absolute;
+    bottom: 0;
+    margin: 3vh;
+    margin-bottom: 5vh;
+    width: 75vw;
+    max-width: 500px;
+}
+
+.imgcontainer {
+	position: relative;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	right:0;
+	width: auto;
+	height: 100vh;
+ 	background-color: black;
+  	background-position: center center;
+  	background-size: cover;
+   	z-index: 3;
+	}
 
 h1 {
     background-color:;
-    font-family: 'syne_extra', 'Arial';
+    font-family: 'syne_extra';
     color: white;
     word-break: normal;
     text-transform: uppercase;
-    font-size: 7.5vh;
+}
 
+.inline {
+    display: inline;
+    font-size: 2.5vh;
+}
+
+.contidoinicio {
+    max-width: 115vh;
+}
+
+h4 {
+    font-family: 'syne_bold', 'Arial';
+    color: white;
+    word-break: normal;
+}
+
+.capa h1 {
+    font-size: 7.5vh;
+    
 }
 
 .sombra {
@@ -95,34 +152,472 @@ h1 {
     background: -o-linear-gradient(rgba(0,0,0,0.2) 40%, rgba(0,0,0,1) 100%);
     background: linear-gradient(rgba(0,0,0,0.2) 40%, rgba(0,0,0,1) 100%);     
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     left: 0;
     position: absolute;
     z-index: 4;
 }
 
-p {
+#section0 p {
     font-size: 2.5vh;
-    margin-top: 1vh;
-    color: white;
-    font-family: 'liberation_sans', 'Arial';
+    text-align: center;
 }
 
 
-#logos {
-    min-width: 30px;
-    min-height: 30px;
-    margin-top: 4vh;
+.capa p {
+    font-size: 17.2px;
+    text-align: left;
+    margin-top: 10%;
+    color: white;
+}
+
+p {
+    font-family: 'Arial';
+    line-height: 1.33em;
+    color: #444444;
+}
+
+#frecha {
+    font-size: 9vh;
+}
+
+.contido {
+    padding-top: 3vh;
+    padding-bottom: 10vh;
+    margin: auto;
+    width: 90vw;
+    font-size: 17.2px;
+    max-width: 700px;
+}
+
+h2 {
+    font-family: 'syne_extra';
+    color: #2c2c2c;
+    word-break: normal;
+    text-transform: uppercase;
     
 }
 
-.ig {
-    height: 4vh;
-    margin-right: 2vh;
-
+img {
+    width: 100vw;
+    height: auto;
+    margin-left: -5vw;
+    margin-top: 5vw;
+    
 }
 
-.twitter {
-    height: 4vh;
+.video {
+    width: 0;
+    height: 51vw;
+    min-width: 100% !important;
+    border: none;
+}
+
+.scroll {
+    min-width: 94vw;
+    
+}
+
+/*Configuración do menú */
+
+#menu li {
+	display: block;
+	color: #000;
+	background: #fff;
+	background: rgba(255,255,255, 0.8);
+    font-family: 'syne_extra';
+    text-transform: uppercase;
+}
+
+#menu li.active {
+	background: #666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a {
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover {
+	color: #000;
+}
+
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+
+#menu {
+	position:fixed;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.expandmenu label {
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'syne_extra';
+    font-size: 14px;
+    padding: 16px;
+    word-break: normal;
+    text-align: right;
+    padding-left: 48px;
+}
+
+.menutop {
+    position: absolute;
+    top: 12.5px;
+    left: 12.5px;
+}
+
+.closetop {
+    position: absolute;
+    top: 12.5px;
+    left: 12.5px;
+    display: none !important;
+}
+
+input:checked +label > i.menutop {
+    display: none;
+}
+
+input:checked +label > i.closetop {
+    display: block !important;
+}
+
+input#menuboton {
+    display: none;
+}
+
+.expandmenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    width: 100%;
+    background: #B72968;
+    color: white;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.1);   
+}
+
+input:checked ~ #menu {
+    max-height: 100%;
+}
+
+/* Enlaces morados */
+
+.prememais {
+    background-color: #B72968;
+    font-family: 'syne_extra';
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.7em;
+    padding-bottom: 0.2em;
+    padding-top: 0.2em;
+    font-size: 20px;
+}
+
+/* Perfiles */
+
+.fotosperfil {
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    background-size: auto;
+    background-color: black;
+    background-position: center top;
+    background-size: cover;
+   	object-fit: fill;
+}
+
+#perfilcontido {
+    padding-top: 0;
+}
+
+/* Destacados */
+
+#destacado {
+    color: #2c2c2c;
+    word-break: normal;
+    font-size: 28px;
+    margin: 0;
+    max-width: 80%;
+}
+
+#bordedestacado {
+    background-color: #B72968;
+    display: block;
+    height: 5px;
+    width: 40%;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    
+}
+/* Sobre nós */
+
+.nos {
+    height: 50vh;
+    margin-top: 49px;
+}
+
+/* Footer */
+
+#logofooter {
+    width: 35vw;
+    margin: auto;
+}
+
+#logofooter > img {
+    margin: auto;
+    width: inherit;
+    background: #B72968;
+    display: block;
+    max-width: 220px;
+}
+
+#textofooter {
+    max-width: 75vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 2.5vh;
+    padding-top: 2.5vh;
+    margin: auto;
+    text-align: center;
+}
+
+.footercontido {
+    padding-top: 10vh;
+}
+
+/* Fotografías dos perfiles e de fondo */
+
+#tinta {
+    background-image: url(https://i.ibb.co/zH0221T/vi-as-arco-vella-2.jpg);
+}
+
+#caino {
+    background-image: url(https://i.ibb.co/TLM7rN3/vi-as-z-rate-2.jpg);
+}
+
+#uva {
+    background-image: url(https://i.ibb.co/r6ZHq32/tinta-femia-uva-pocha-2.jpg);
+}
+
+#fernando {
+    background-image: url('https://i.ibb.co/6nRsr6n/fernando2.jpg');
+    
+}
+
+#antonio {
+    background-image: url('https://i.ibb.co/FnmzYPX/Antonio-Portela-1.jpg');
+    
+}
+
+#eulogio {
+    background-image: url('https://i.ibb.co/sgNCGHq/se-or-z-rate.jpg');
+    
+}
+
+#gonta {
+    background-image: url('https://i.ibb.co/1676vX9/se-or-vide-vide.jpg');
+    
+}
+
+#carmen {
+    background-image: url('https://i.ibb.co/pb98XTD/Carmen-CSIC.jpg');
+    
+}
+
+#joseluis {
+    background-image: url('https://i.ibb.co/5MFSzGJ/se-or-CSIC.jpg');
+    
+}
+
+#jessica {
+    background-image: url('https://i.ibb.co/h7vY70S/IMG-0591.jpg');
+}
+
+#sergio {
+    background-image: url('https://i.ibb.co/ZL6pqWr/IMG-0612.jpg');
+}
+
+#carmendelrio {
+    background-image: url('https://i.ibb.co/k5P5SYN/IMG-0594.jpg');
+}
+
+#pedro {
+    background-image: url('https://i.ibb.co/qBf7msM/IMG-0595.jpg');
+}
+
+/*Pés de foto e autoría */
+
+.pefoto, .autor {
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 2vh;
+    
+}
+
+.autor {
+    font-weight: bold;
+}
+
+/* Botón de compartir */
+
+.botonwrap {
+    position: fixed;
+    bottom: 0;
+    margin: 10px;
+    right: 0;
+}
+
+.botonwrap2 {
+    position: fixed;
+    bottom: 58px;
+    margin: 10px;
+    right: 0;
+    display: none;
+}
+
+.boton {
+    box-shadow: 0px 5px 11px -2px rgba(0, 0, 0, 0.18), 0px 4px 12px -7px rgba(0, 0, 0, 0.15);
+    width: 48px;
+    height: 48px;
+    margin: 10px;
+    position: relative;
+    background-color: #FFFF00;
+    border-radius: 50%;
+    bottom: 0;
+    margin: 10px;
+    right: 0;
+    display: block;
+}
+
+.boton i {
+    color: #070707;
+    font-size: 24px;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    margin-top: 12px;
+    margin-left: 12px;
+    
+}
+
+input#checkcompartir {
+    display: none;
+}
+
+input:checked ~ .botonwrap2 {
+    display: block !important;
+}
+
+label.boton {
+    cursor:pointer;
+    display: block !important;
+}
+
+.openshare {
+    display: block;
+}
+
+.closeshare {
+   display: none !important;
+}
+
+input:checked +label > i.openshare {
+    display: none;
+}
+
+input:checked +label > i.closeshare {
+    display: block !important;
+    position: absolute;
+    bottom: 12px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+
+@media only screen and (max-height: 420px) {
+    /*Para móbiles con pantalla moi reducida*/
+    .botonwrap2 {
+        bottom: 42px;
+    }
+    
+    .boton {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .boton i {
+	font-size: 18px;
+	height: 18px;
+	width: 18px;
+	margin-top: 7px;
+	margin-left: 7px;
+    }
+    
+    input:checked +label > i.closeshare {
+    bottom: 7px;
+}
+    
+    
+}
+
+@media only screen and (min-width: 768px) {
+  /* Para sobremesas e portátiles: */
+    .fotosperfil {
+        width: 50vw;
+        float: left;
+        margin: auto;
+        background-position: center top;
+        background-size: cover;
+    }
+    
+    #perfilcontido {
+        width: 40vw;
+        float: right;
+        padding-right: 5vw;
+        padding-top: 15vh;
+    }
+
+    .nos {
+        height: 100vh;
+    }
+    
+    img {
+        width: 100%;
+        margin: auto;
+        margin-top: 2vh;
+    }
+    
+    .capa > h2 {
+        font-size: 52px !important;
+    }
+    
+    .video {
+        height: 400px;
+    }
+
 }

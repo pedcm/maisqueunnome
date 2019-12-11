@@ -3,44 +3,526 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>#MÁISQUEUNNOME</title>
     
+    <!-- Principais Meta Tags -->
+    <title>#MÁISQUEUNNOME</title>
+    <meta name="title" content="#MÁISQUEUNNOME">
+    <meta name="description" content="No Morrazo, a uva é a Tinta Femia. No Salnés, Caíño Tinto. Recentes estudos demostran a súa sinonimia. Porén, hai algo máis que un nome que as separe?">
     <meta name="keywords" content="tinta femia, caíño tinto, máis que un nome, mais que un nome, maisqueunnome">
-    <meta name="description" content="Unha reportaxe multimedia sobre a historia de dúas uvas tintas atlánticas.">
     <meta name="author" content="Pedro Costa Manteiga">
     
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://maisqueunno.me/">
+    <meta property="og:title" content="#MÁISQUEUNNOME">
+    <meta property="og:description" content="No Morrazo, a uva é a Tinta Femia. No Salnés, Caíño Tinto. Recentes estudos demostran a súa sinonimia. Porén, hai algo máis que un nome que as separe?">
+    <meta property="og:image" content="https://i.ibb.co/7KcZGBw/logomaisqueunnome.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://maisqueunno.me/">
+    <meta property="twitter:title" content="#MÁISQUEUNNOME">
+    <meta property="twitter:description" content="No Morrazo, a uva é a Tinta Femia. No Salnés, Caíño Tinto. Recentes estudos demostran a súa sinonimia. Porén, hai algo máis que un nome que as separe?">
+    <meta property="twitter:image" content="https://i.ibb.co/7KcZGBw/logomaisqueunnome.png">
+    
+    <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/fullpage.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicons/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="#MÁISQUEUNNNOME"/>
+    <meta name="msapplication-TileColor" content="#B72968" />
+    <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="favicons/mstile-310x310.png" />   
+    <meta name="theme-color" content="#B72968">
     
 </head>
 <body>
+   <!-- Menu fixo fóra de Fullpage -->
+    <div class='expandmenu noselect'>
+        <input type="checkbox" id="menuboton">
+        <label for="menuboton">#MÁISQUEUNNOME<i class="material-icons menutop">menu</i><i class="material-icons closetop">close</i></label>
+        <ul id="menu">
+            <li data-menuanchor="inicio"><a href="#inicio">Inicio</a></li>
+            <li data-menuanchor="tintafemia"><a href="#tintafemia">Tinta femia</a></li>
+            <li data-menuanchor="cainotinto"><a href="#cainotinto">Caíño tinto</a></li>
+            <li data-menuanchor="auva"><a href="#auva">A uva</a></li>
+            <li data-menuanchor="sobrenos"><a href="#sobrenos">Sobre nós</a></li>
+            <li data-menuanchor="acercade"><a href="#acercade">Acerca de</a></li>
+        </ul>
+    </div>
+    <!-- Fullpage.js -->
     <div id="fullpage">
-        <div class="section" id="section0">
+        <!-- Inicio -->
+        <div class="section active fp-auto-height-responsive" id="section0">
 		    <div class='videocontainer'>
 		    <div class='sombra'></div>
 		    <video id="videofondo" autoplay loop muted playsinline>
-			    <source src="media/follasvide.mp4" type="video/mp4">
+			    <source data-src="media/follasvide.mp4" type="video/mp4">
             </video>
             </div>
             <div class="capa">
                 <h1># <br> Máis que un nome</h1>
-                <p>Sitio web en construción. Síguenos en redes sociais mentres preparamos o contido. <br>
-                <a href='https://www.instagram.com/maisqueunnome' target='_blank'> <img id='logos' class='ig' alt='Instagram' src='media/instagramlogo.png'></a>
-                <a href='https://www.twitter.com/maisqueunnome' target='_blank'> <img id='logos' class='twitter' alt='Twitter' src='media/twitterlogo.png'></a></p>
+                <div class='contidoinicio'>
+                    <h4 class='inline'>Dúas comarcas, dous viños, dous nomes.</h4><p class='inline'> No Morrazo aínda distinguen á súa </p><h4 class='inline'>tinta femia</h4><p class='inline'> do </p><h4 class='inline'>caíño tinto</h4><p class='inline'> do Salnés, malia que os estudos do último século deixan claros os vínculos entre ambas.</p>
+                </div>
+                <p class='scroll'>Fai scroll para continuar <br> <i class="material-icons" id='frecha'>keyboard_arrow_down</i></p>
+            </div>
+        </div>
+        <!-- Tinta Femia -->
+        <div class="section fp-auto-height-responsive" id="section1">
+            <div class="slide active" id="slide1">
+                <div class='imgcontainer' id='tinta'>
+                    <div class='sombra'></div>
+                </div>
+                <div class="capa">
+                        <h2>No Morrazo, a Tinta Femia sobrevive nas cuncas</h2>
+                </div>
+                <div class='contido'>
+                                        
+                    <iframe class="video" data-src="https://www.youtube.com/embed/NhZwQts3JCo" scrolling="no" frameborder="0" allow="accelerometer; autoplay; gyroscope; fullscreen" allowfullscreen></iframe>
+
+                    <p>O Tinta Femia é un viño con personalidade. Deses que che gustan ou non. É un tinto mimado pola xente do Morrazo, que sobrevive con poucos apoios e grazas ó esforzo duns poucos. Falamos dunha parte da cultura gastronómica galega á que, en moitas ocasións, somos nós mesmos os que desprestixiamos, cando para os profesionais da hostalaría ten un gran valor.</p>
+                    
+                    <p>Falamos dun tinto fresco e con certa acidez. É un viño que se toma cando se está a chegar o verán, en maio xuño, e é versátil para todo tipo de comidas. Para Fernando García, presidente da Asociación de viticultores de San Martiño de Bueu, o prato ideal sería “Tinta Femia de Cela e sardiñas de Ons”.</p>
+                    
+                    <a class='prememais' id="moveTo21" href="#">#Perfil: Fernando García</a>
+                    
+                    <p>Trátase ademais dun viño con pouca graduación que oscila entre os oito e os trece graos, dependendo da casa no que se faga. O viticultor vigués Antonio Portela é un amante deste tinto polo seu sabor oceánico.</p>
+                      
+                    <iframe class="video" data-src="https://www.youtube.com/embed/kzBxJZU9S7Y" scrolling="no" frameborder="0" allow="accelerometer; autoplay; gyroscope; fullscreen" allowfullscreen></iframe>
+                    
+                    <p>A Tinta Femia ten un carácter puramente artesanal, xa que apenas se empregan sulfitos. Os viticultores do Morrazo fan que sobreviva nunhas 20-30 hectáreas da zona, como nos indica Fernando García, estando algunhas das viñas abandonadas. Falamos dun viño de aldea, en concreto de Cela (Bueu), posto que da superficie anteriormente sinalada o 80% é de aquí. Para facernos unha idea, a Asociación de viticultores de San Martiño de Bueu está formada por 80 persoas, polo que o territorio se divide en microviñas e a produción de cada bodega é moi pequena.</p>
+
+                    <div class='foto'>
+                        <img data-src="https://i.ibb.co/cy7xxP6/vi-as-Cela.jpg" alt="Viñas de Tinta Femia en Cela (Bueu)">
+                        <p class='pefoto'>Viñas de Tinta Femia en Cela (Bueu)</p><p class='autor'>&nbsp +NOME</p>
+                    </div>
+                    
+                    <p>A cepa nai das viñas de Tinta Femia plantouse en 1782 no Morrazo. Este viño nunca se moveu demasiado da zona e foron e son os furanchos os que garantiron a súa existencia. A maioría de viticultores non sacan o tinto máis alá deste lugares ou das súas casas. A isto tampouco axudou o feito de non entrar na <a href="https://doriasbaixas.com/">Denominación de Orixe (D.O) Rías Baixas</a> pois isto provocou que o Tinta Femia “quedara fóra de toda a estrutura vitícola moderna e comercial”, como nos explicou Antonio Portela.</p>
+                    
+                    <p>Unha curiosidade sobre este viño é o seu nome, que está relacionado tamén con parte da súa historia. O Tinta Femia está escrito en feminino por unha razón, pois tradicionalmente eran as mulleres do Morrazo as que cultivaban o viño e incluso as que o producían, porque os homes estaban embarcados por diferentes partes do mundo.</p>
+                    
+                    <iframe class="video" data-src="https://www.youtube.com/embed/8eH3HEJb3_o" scrolling="no" frameborder="0" allow="accelerometer; autoplay; gyroscope; fullscreen" allowfullscreen></iframe>
+                                       
+                    <p>Como explicamos, o consumo deste tinto dáse sobre todo nos tradicionais furanchos e poucos son os que producen para que saia máis alá. Antonio Portela é un dos viticultores que coida que o Tinta Femia se coñeza fóra. En concreto, o seu viño Namorado leva tres anos vendéndose por varios puntos especializados e restaurantes da xeografía galega. Este ano conseguiu unha nominación na categoría de viño revelación nos premios Magnum.</p>
+                    
+                    <a class='prememais' id="moveTo22" href="#">#Perfil: Antonio Portela</a>
+                    
+                    <p>Unha das preocupacións con respecto ao viño é, segundo Fernando García, a continuidade da produción do Tinta Femia. “O problema disto é que non hai relevo xeracional”, destaca o viticultor. As persoas da zona elaboran o viño por tradición, mais que por beneficio económico, o que provoca que pouca da xente nova da zona estea disposta a herdar esta labor.</p>
+                    
+                    <p>Tamén unha das grandes trabas é o envellecemento da poboación, sobre todo nas aldeas. Este é un problema co que lidia Galicia en xeral, pero que nos últimos anos está a afectar de forma crecente tanto a zona do Salnés coma a do Morrazo.</p>
+                    
+                    <iframe title="Porcentaxe de poboaci&oacute;n de 65 e m&aacute;is anos (2018)" aria-label="Bar Chart" id="datawrapper-chart-2OT4i" data-src="https://datawrapper.dwcdn.net/2OT4i/1/" scrolling="no" frameborder="0" style="width: 0; margin-bottom: 10px; min-width: 100% !important; border: none;" height="546"></iframe>
+                    
+                    <iframe title="Variaci&oacute;n na porcentaxe de maiores de 65 anos (2002-2018)" aria-label="Spain galicia municipalities choropleth map" id="datawrapper-chart-GvsD3" data-src="https://datawrapper.dwcdn.net/GvsD3/1/" scrolling="no" frameborder="0" style="width: 0; margin-bottom: 10px; min-width: 100% !important; border: none;" height="400"></iframe>
+                    
+                    <iframe title="Variaci&oacute;n na proporci&oacute;n da  poboaci&oacute;n de 65 e m&aacute;is anos (2002-2018)" aria-label="Arrow Plot" id="datawrapper-chart-7uz4Y" data-src="https://datawrapper.dwcdn.net/7uz4Y/1/" scrolling="no" frameborder="0" style="width: 0; margin-bottom: 10px; min-width: 100% !important; border: none;" height="213"></iframe>
+            
+                    <p>A pesar dos esforzos de proxectos como o de Portela, o tinta femia segue sendo un viño pouco valorado, incluso pola normativa: está fora dos viños con D.O. Rías Baixas, aínda que esta denominación englobe zonas fóra destas rías. Quizais a día de hoxe, coa creación da IXP (Indicación Xeográfica Protexida) non é tan crucial que a tinta femia estea dentro desta zona vitícola, xa que implica uns custos de produción que os seus produtores non serían capaces de asumir.</p>     
+                    
+                    <span id=bordedestacado></span>
+                    <h4 id='destacado'>Antonio Portela “non ve un traballo con tanto potencial” coma o do Caíño adaptado ao Morrazo</h4>
+                    <span id=bordedestacado></span>
+                    
+                    <p>Con todo, o Tinta Femia foise impulsando nestes últimos anos. A festa propia do viño recuperouse no pasado 2016, cando levaba parada dende 2007. A celebración fixérase por primeira vez no ano 1997, co poeta Manuel María de pregoeiro, mesturando nada máis e nada menos que dúas partes importantes da cultura galega, a literaria e a gastronómica. A Asociación hoxe en día busca, ademais, diversificarse, coma este verán que se sumou ó Festival SonRías Baixas ofrecendo unha cata de viños.</p>
+                    
+                    <iframe class="video" data-src="https://www.youtube.com/embed/a_Jp8xqXe00" scrolling="no" frameborder="0" allow="accelerometer; autoplay; gyroscope; fullscreen" allowfullscreen></iframe>  
+                                        
+                    <p>O Tinta Femia é un viño coidado pola xente da zona. Unha das características é que non se mestura con outras variedades, de feito moitos meten os acios enteiros durante o proceso de fermentación. Antonio Portela móstrase bastante positivo con respecto ó futuro do Tinta Femia, xa que considera que en Galicia “non ve un traballo con tanto potencial” coma o do Caíño adaptado ao Morrazo. Isto afírmao xa que falamos dunha zona vitícola nova, polo que é “onde máis se pode avanzar”, en palabras do viticultor.</p>
+                    
+                    <iframe class="video" data-src="https://www.youtube.com/embed/XztvGO3epmA" scrolling="no" frameborder="0" allow="accelerometer; autoplay; gyroscope; fullscreen" allowfullscreen></iframe>
+                    
+                    <p>Todo isto da esperanzas para o futuro deste viño. Pode ser que os tintos non sexan un produto de masas coma outros, pero tampouco buscan iso dende o Morrazo. O Tinta Femia é valorado entre os especialistas do viño, pero moi descoñecido entre a maioría dos galegos. Con persoas coma Fernando e Antonio que se están a preocupar por manter este tradicional tinto galego, esta parte da nosa cultura gastronómica mantense a flote.</p>
+                    
+                    <p>O Tinta Femia é unha parte fundamental da identidade de Cela e Cela é unha parte fundamental da autenticidade do Tinta Femia, pois un súmalle valor ó outro. É un viño realizado por paixón por esta tradición. É, en definitiva unha parte única e realmente autóctona da viticultura galega.</p>
+                    
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+                <div class='fotosperfil' id="fernando"></div>
+                <div class='contido' id='perfilcontido'>
+                    <h2>#PERFIL: Fernando García</h2>
+                    <a class='prememais' id="moveTo20" href="#">Atrás</a>
+                    <p>É o actual presidente da Asociación de viticultores de San Martiño de Bueu. Xubilado de banca de 63 anos leva 14 anos á fronte da asociación. En palabras do seu cuñado, é unha excepción á regra xa que todos son homes de mar, menos el.</p>
+                    <p>É un dos produtores máis prolíficos de tinta femia en Cela e un dos organizadores e promotores da Festa da Tinta Femia de Cela.</p>
+                </div>
+            </div>
+            <div class="slide" id="slide3">
+                    <div class='fotosperfil' id='antonio'></div>
+                    <div class='contido' id='perfilcontido'>
+                        <h2>#PERFIL: Antonio Portela</h2>
+                        <a class='prememais' id="moveTo202" href="#">Atrás</a>
+                        <p>Sumiller de formación e viticultor de vocación leva xa uns anos producindo tinta femia co seu viño Namorado. A súa produción aumenta cada ano e goza cada vez de máis prestixio como demostra o segundo posto acadado polo viño Namorado nos premios Magnum.</p>
+                        <p>É un auténtico namorado da tinta femia e un dos nomes máis recoñecibles cando falamos deste viño tan especial aínda que el non o teña tan claro.</p>
+                    </div>
+            </div>
+        </div>
+        <div class="section fp-auto-height-responsive" id="section2">
+            <div class="slide active" id="slide1">
+                <div class='imgcontainer' id='caino'>
+                    <div class='sombra'></div>
+                </div>
+                <div class="capa">
+                        <h2>No Salnés, O Caíño Tinto quere volver a brotar</h2>
+                </div>
+                <div class='contido'>
+                                        
+                    <iframe class="video" data-src="https://www.youtube.com/embed/DZ07EQURZVw" scrolling="no" frameborder="0" allow="accelerometer; autoplay; gyroscope; fullscreen" allowfullscreen></iframe>
+
+                    <p>Para coñecer a outra vertente do caíño tinto non temos que desprazarnos moi lonxe, só con movernos ao outro lado da ría de Pontevedra volvemos a atopala. Situámonos agora na comarca do Val do Salnés.  Esta zona ten unhas condicións climáticas que axudan moito a esta cepa, grazas non ter temperaturas extremas. Aquí xa non oímos o nome de tinta femia. É o caíño tinto do Salnés.</p>
+                    
+                    <p>O Salnés é unha comarca moi recoñecida pola súa grande produción de viño branco, en concreto albariño, un dos selos estrela da denominación de orixe onde se encadra esta comarca, a D.O. Rías Baixas. Mais isto non sempre foi así. Antigamente a práctica totalidade do viño producido nesta zona era viño tinto.</p>
+                    
+                    <p>As variedades máis típicas da zona son o espadeiro, o loureiro tinto e, como non, o caíño. Pero isto do caíño ten trampa, xa que sempre se mesturaba coas variedades que mencionamos antes para facer viños multivarietais, o que impedía que se recoñecesen cada un por separado.</p>
+                    
+                    <div class='foto'>
+                        <img data-src="https://i.ibb.co/frqsmsR/tronco-ca-o-tinto.jpg" alt="Tronco de caíño tinto en Zárate (Meaño)">
+                        <p class='pefoto'>Tronco de caíño tinto en Zárate (Meaño)</p><p class='autor'>&nbsp +NOME</p>
+                    </div>
+                    
+                    <p>A chegada do albariño e todas as vantaxes que proporcionaba aos viticultores da época - é unha uva máis resistente, produtiva e de ciclos máis curtos, así como un viño que gañou adeptos dentro e fóra da comarca - , fixo que o caíño e o resto das uvas tintas autóctonas da comarca fosen reducíndose paulatinamente ata chegar case á desaparición.</p>
+                    
+                    <a class='prememais' id="moveTo31" href="#">#Perfil: Eulogio Pomares</a>
+                    
+                    <p>Pero a día de hoxe son unhas poucas as bodegas que están intentando recuperar estas variedades tintas galegas, das que resultan viños moi diferentes aos que se poden atopar no resto do país. Unha destas adegas é <a href="https://www.zarate.es">Zárate</a>, situada no concello de Meaño e dirixida por Eulogio Pomares, que herdou esta propiedade da familia da súa nai. Formouse como enólogo e púxose aos mandos desta bodega, así nolo conta el mesmo.</p>
+                      
+                    <iframe class="video" data-src="https://www.youtube.com/embed/YanGnjsQGuQ" scrolling="no" frameborder="0" allow="accelerometer; autoplay; gyroscope; fullscreen" allowfullscreen></iframe>
+                    
+                    <p>Zárate dedícase principalmente á produción de albariño, pero hai uns anos decidiron apostar tamén polos tintos galegos. As variedades que se cultivan nesta bodega son autóctonas do país e con longa tradición na viticultura galega: o caíño, o loureiro e o espadeiro. Aínda así, trátase dunha produción moi reducida polo pouco desenvolvemento comercial que teñen este tipo de viños.</p>
+
+                    <iframe class="video" data-src="https://www.youtube.com/embed/uFGSY1Wptuc" scrolling="no" frameborder="0" allow="accelerometer; autoplay; gyroscope; fullscreen" allowfullscreen></iframe>
+                    
+                    <p>Para facernos unha idea desta afirmación, Fernando Vilariño, técnico do Consello regulador da D.O Rías Baixas achegounos unha serie de datos bastante reveladores. A superficie de Caíño tinto cultivado é de 36,17 hectáreas, unha porcentaxe dun 0,89% das 4.050,08 hectáreas totais cultivadas. A produción de Caíño tinto en 2019 foi de 45.761 kg, un 12,65% da produción total de castes tintas; pero só un 0,14% da produción total da D.O. Rías Baixas.</p>
+                    
+                    <p>E como enólogo, Eulogio Pomares tamén nos destacou a versatilidade deste viño e o alto valor que ten para a cociña de vangarda. As súas similitudes cun viño francés do val do Loira, o "pineau d’aunnis", moi valorado polos sumilleres para a cociña asiática e para a cociña de fusión pola súa frescura e o seu maridaxe con ese tipo de pratos.</p>
+                    
+                    <iframe class="video" data-src="https://www.youtube.com/embed/YpB60xv3-7E" scrolling="no" frameborder="0" allow="accelerometer; autoplay; gyroscope; fullscreen" allowfullscreen></iframe>
+                                       
+                    <p>E, en que se diferencia este viño da tinta femia? Por explicalo dun xeito simple, non é un viño tan de aldea e tan artesanal coma a tinta femia. A súa elaboración faise en adegas con moitos máis medios e cun grao de profesionalización máis alto. O que isto provoca é unha perda de frescura e de bravura con respecto ao outro lado da ría. Como definición poderíamos dicir que é un viño ácido e bastante afroitado, con máis alcol que a tinta femia.</p>
+                    
+                    <p>É ademais un viño en en auxe. Porén, a día de hoxe o caíño tinto representa unha porcentaxe moi pequena do total de viño producido na comarca e está destinada a públicos moi exclusivos. Isto débese, por unha banda, ao prezo, e por outra, a que é un viño que non é de consumo habitual e como a tinta femia, ou che gusta ou non che gusta, nunca vas quedar indiferente.</p>
+                    
+                    <iframe class="video" data-src="https://www.youtube.com/embed/haIxIW_ImVk" scrolling="no" frameborder="0" allow="accelerometer; autoplay; gyroscope; fullscreen" allowfullscreen></iframe>
+                    
+                    <p>Mais, coñecedes algunha tenda onde se comercialice esta variedade autóctona galega, enrolada dentro de toda unha D.O. como a das Rías Baixas? Se non é o caso, como nos ocorreu a nós nun principio, ímosvos contar un lugar onde poderedes achegarvos se queredes obter unha botella deste viño.</p>
+                    
+                    <a class='prememais' id="moveTo32" href="#">#Perfil: Xosé Gontá</a>
+                    
+                    <p>Falamos do espazo enocultural Vide Vide!, situado na rúa da Fonte de Santo Antonio en Compostela. Este local ademais caracterízase por facer unha aposta forte polos viños galegos, tanto os moi recoñecidos como os brancos do Ribeiro ou das propias Rías Baixas como por estes viños menos recoñecidos pero non por iso de menor calidade como o caíño tinto.</p>
+                    
+                    <iframe class="video" data-src="https://www.youtube.com/embed/C1CQNWLPgqY" scrolling="no" frameborder="0" allow="accelerometer; autoplay; gyroscope; fullscreen" allowfullscreen></iframe>
+                    
+                    <p>Ademais da dificultade de obtención, espazos coma Vide, Vide! deben afrontar outro tipo de problemas, como por exemplo, os prexuízos que teñen unha gran cantidade de consumidores - sobre todo galegos - sobre o caíño tinto e, en xeral, dos tintos autóctonos. Uns viños atlánticos e con personalidade, cunha boa acidez e unha frescura renovadora. Así nos conta Xosé Gontá, sumiller e rexente de Vide, Vide! unha anécdota cun turista inglés nunha adega das Rías Baixas.</p>
+                    
+                    <iframe class="video" data-src="https://www.youtube.com/embed/gkoHMhzo7Oc" scrolling="no" frameborder="0" allow="accelerometer; autoplay; gyroscope; fullscreen" allowfullscreen></iframe>
+                    
+                    <p>Aínda que existan diferenzas entre os viticultores da zona do Salnés e os da zona do Morrazo, todos coinciden en que a uva da lugar a viños moi peculiares que destacan por ser diferentes a todos os demais. Tanto Antonio Portela como Eulogio Pomares mostran paixón, afirmando que o seu viño é o mellor, e ambos teñen un coñecemento amplo sobre toda a cultura vitícola da zona.</p>
+                    
+                    <p>Como vedes, todos os nosos protagonisas están relacionados entre eles, aínda que estean separados por unha ría. Incluso os científicos do CSIC que veremos no nodo "A Uva" entran neste círculo, xa que grazas a eles se demostrou que a uva era a mesma. Agora só queda gozar dos dous viños e deixar atrás a controversia.</p>
+                    
+                    <iframe src="https://onodo.org/visualizations/99823/embed/" width="100%" height="450px" scrolling="no" marginheight="0" frameborder="0" allowfullscreen></iframe>
+                    
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+                <div class='fotosperfil' id='eulogio'></div>
+                <div class='contido' id='perfilcontido'>
+                    <h2>#PERFIL: Eulogio Pomares</h2>
+                    <a class='prememais' id="moveTo30" href="#">Atrás</a>
+                    <p>É un enólogo formado en Burdeos, Francia, e o propietario de bodegas Zárate dende o ano 2000. Ademais, ten un proxecto propio en marcha dende o ano 2012 a título de <a href="http://www.fentowines.com/es">Fento Wines</a> que presenta coma unha empresa “dedicada a elaborar viños que mostren a uva e os seus matices, pero cun enfoque e presentación diferentes”.</p> 
+                    <p>El é a sétima xeración da familia en traballar na bodega Zárate, que leva activa dende o 1707. Dende que chegou á bodega tratou de impulsar unha viticultura o máis natural posible. Ademais, é un dos poucos que continúa cultivando tintos autóctonos nunha terra famosa polo albariño, coma son os casos de Ribadumia ou Meaño.</p>
+                </div>
+            </div>
+            <div class="slide" id="slide3">
+                    <div class='fotosperfil' id='gonta'></div>
+                    <div class='contido' id='perfilcontido'>
+                        <h2>#PERFIL: Xosé Gontá</h2>
+                        <a class='prememais' id="moveTo302" href="#">Atrás</a>
+                        <p>É socio, xunto con Martiño Santos, do espazo enocultural Vide Vide!, en Santiago de Compostela. Ten formación como sumiller e rexenta este establecemento no nº 10 da rúa da Fonte de Santo Antonio.</p>
+                        <p>Vide Vide! é un espazo no que se organizan ademais actividades como catas con viticultores invitados, asesora viños para eventos, reparte a domicilio, reutiliza botellas, distribúe viño a granel e imparte cursos. Tamén conta cunha newsletter para socios da tenda. É un lugar no que coidan ter viños non tan coñecidos da cultura galega, polo que tamén contan con tinta femia e caíño tinto.</p>
+                    </div>
+            </div>
+        </div>
+        <div class="section fp-auto-height-responsive" id="section3">
+           <div class="slide active" id="slide1">
+                <div class='imgcontainer' id='uva'>
+                    <div class='sombra'></div>
+                </div>
+                <div class="capa">
+                        <h2>Dous nomes, unha mesma uva</h2>
+                </div>
+                <div class='contido'>
+                                        
+                    <iframe class="video" data-src="https://www.youtube.com/embed/Tf6-V1BXzSU" scrolling="no" frameborder="0" allow="accelerometer; autoplay; gyroscope; fullscreen" allowfullscreen></iframe>
+
+                    <p>O Caíño Tinto e o Tinta Femia son viños diferentes na súa esencia, mais os últimos estudos mostran que a súa orixe é a mesma: a cepa de uva caíño tinto. Carmen Martínez e José Luis Santiago son reputados científicos, investigadores e membros do grupo de viticultura da <a href="http://www.mbg.csic.es/es/la-mision-biologica-de-galicia/">Misión Biolóxica de Galicia</a> do CSIC de Pontevedra. Estes demostraron a sinonimia entre as dúas uvas. </p>
+                    
+                    <iframe class="video" data-src="https://www.youtube.com/embed/MvHgZzHW17Y" scrolling="no" frameborder="0" allow="accelerometer; autoplay; gyroscope; fullscreen" allowfullscreen></iframe>
+                    
+                    <p>A uva caíña cultívase na zona do Val do Salnés, do Morrazo e en Portugal, onde se coñece como Borraçal. Por ser unha cepa de alta fertilidade é delicada, faille dano tanto o frío, a calor, coma a excesiva humidade. Un ciclo de maduración longo esixe que estean expostas á maior insolación posible. Son acios cilíndricos e non moi compactos, as bagas son cilíndricas, de tamaño medio e de cor violeta azulado escuro.</p>
+                    
+                    <blockquote class="imgur-embed-pub" lang="en" data-id="a/MlSON0r"  ><a href="https://imgur.com/a/MlSON0r">Festa Tinta Femia 2019</a></blockquote><script async src="https://s.imgur.com/min/embed.js" charset="utf-8"></script>
+                    
+                    <p>Emprégase na Denominación de Orixe (D.O.) Rías Baixas, a cal só favorece ós viños da zona do Salnés. Isto provocou que o viño tinta femia, a pesar de ser da mesma uva, quedara durante moitos anos sen amparo institucional. Agora está incluída dentro da Indicación Xeográfica Protexida (IXP) do Morrazo. Xosé Gontá explícanos a problemática que hai ao redor da DO Rías Baixas.</p>
+                    
+                    <iframe class="video" data-src="https://www.youtube.com/embed/py3_GhTtKfI" scrolling="no" frameborder="0" allow="accelerometer; autoplay; gyroscope; fullscreen" allowfullscreen></iframe>
+                    
+                    <p>Pero a cepa caíña ten multitude de clons aos que se lle foron poñendo diferentes apelidos. Algúns exemplos son o caíño bravo, caíño longo e incluso existe outra variedade branca, chamada caíño branco.</p>
+                    
+                    <p>Popularmente, considerábase que a tinta femia e o caíño tinto proviñan de distinta uva. Segundo nos comenta Emilia Díaz Losada de EVEGA é un tema que emerxe en momentos esporádicos na prensa. Como indica a experta, hai dúbidas xa que ás veces as denominacións confúndense e, ademais, son estudos que están en continua evolución. Emilia Díaz móstrase firme: “esa tinta femia - a do Morrazo - e o caíño tinto son a mesma”.</p>
+                                       
+                    <p>Dende o propio <a href="https://www.csic.es/">CSIC</a> comezaron a estudar con lupa este tema no ano 1986. Carmen Martínez explica que evidenciaban similitudes entre as denominadas uva Caíño Tinto e a Tinta Femia. Fixeron entón un estudo das follas e racimos que evidenciou máis esa sinonimia.</p>
+                                        
+                    <div style="width: 100%;"><div style="position: relative; padding-bottom: 149.91666666666669%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200" height="1799" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" data-src="https://view.genial.ly/5deea627af60b20f6594fd72" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+                    
+                    <p>Non obstante, con ese estudo non se confirmaba ó 100% que se trataba da mesma. No 2003 sacaron un estudo no cal puideron comparar o ADN para asegurar de maneira definitiva que estaban ante unha sinonimia. Así nos explica José Luis Santiago, que se uniu a Carmen Martínez a esta investigación facendo unha tese de doutoramento sobre o Caíño Tinto, os diferentes estudos realizados.</p>
+                    
+                    <iframe class="video" data-src="https://www.youtube.com/embed/Gxny2beklZE" scrolling="no" frameborder="0" allow="accelerometer; autoplay; gyroscope; fullscreen" allowfullscreen></iframe>
+                    
+                    <p>Esta afirmación é confirmada por moitos outros estudos e por expertos. Esta uva ten un problema para a súa expansión e coñecemento. Isto fai que moitas veces estea incluída en producións multivarietais, é dicir, acompañando a outras uvas dentro dun viño. A pouca produción monovarietal desta uva limita moito o seu coñecemento, recoñecemento e expansión.</p>
+                    
+                    <a class='prememais' id="moveTo41" href="#">#Perfil: Carmen Martínez</a>
+                    
+                    <p>Significa isto que o viño Tinta Femia e o Caíño Tinto son o mesmo? Evidentemente non. Simplemente teñen unha mesma procedencia, mais cada tinto é un mundo. A historia, a zona da que proveñen, a situación actual, o sabor, a cultura que engloban… Non é o mesmo. Teñen a mesma orixe, mais unha esencia completamente distinta.</p>
+                    
+                    <iframe class="video" data-src="https://www.youtube.com/embed/6Az1Tk81Gvw" scrolling="no" frameborder="0" allow="accelerometer; autoplay; gyroscope; fullscreen" allowfullscreen></iframe>
+                                       
+                    <p>O Tinta Femia é un viño máis tradicional, que está enormemente arraigado á cultura do Morrazo, especialmente de Cela. Pola súa banda o Caíño Tinto foi perdendo toda esa parte de sentimento de unión co Val do Salnés e o seu protagonista pasou a ser o Albariño.</p>
+                    
+                    <p>Ademais, estes dous viños teñen a gran diferenza institucional como é a D.O. Rías Baixas. O Caíño Tinto tense que traballar dentro dos límites desta normativa, mentres que o Tinta Femia é máis libre en todo o sentido da produción. Isto demóstrase tamén na súa distribución, sendo o do Salnés moito máis comercial que o do Morrazo, bastante limitado ó furancho.</p>
+                    
+                    <a class='prememais' id="moveTo42" href="#">#Perfil: José Luis Santiago</a>
+                    
+                    <p>Ó final, o que determina na gran maioría o sabor son os terreos, como ben explica Fernando García. O Tinta Femia ten esa parte de salinidade e frescura que lle ofrece estar preto do mar e tende a ser un pouco máis ácido que o do Salnés. Pois, o Caíño Tinto, en palabras de Eulogio Pomares, ten un tempo de “plus”. </p>
+                    
+                    <p>Está claro que cada un ten o seu toque especial e unha cultura diferente. Eulogio Pomares e Antonio Portela xa deron a súa opinión. Agora, tócavos ós lectores. Contádenos que diferenzas vedes entre ambos na caixa de comentarios!.</p>
+                        
+                    <span id=bordedestacado></span>
+                    <h4 id='destacado' style="font-size: 22px; line-height: 28px;">“As xarras de cristal mostran ridentes <br>os nosos viños recedentes <br>a erbaboa, a resede e a tomiño, <br>o esvaido verde do loureiro <br>os acesos rubis do agre caiño <br>o sangue roxo e moiro do espadeiro <br>doce e levian como unha canturia” <br><br>Ramón Cabanillas</h4>
+                    <span id=bordedestacado></span>
+                    
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfgdpS8vHHVxjtc-otmgNm8VIlDQCmWoZd78kkGQ-IK4VbsiA/viewform?embedded=true" width="100%" max-width="100%" height="1658" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+                    
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+                <div class='fotosperfil' id='carmen'></div>
+                <div class='contido' id='perfilcontido'>
+                    <h2>#PERFIL: Carmen Martínez</h2>
+                    <a class='prememais' id="moveTo40" href="#">Atrás</a>
+                    <p>É a xefa do Grupo de Viticultura e do Departamento de Viticultura e forestal da Misión Biolóxica de Galicia (CSIC, Pontevedra). Reputada investigadora con proxectos como o Galiat 6+7, estudou xa no ano 1986 as similitudes e diferenzas entre a tinta femia e o caíño tinto, determinando que era a mesma uva.</p> 
+                    <p>Xunto a José Luis Santiago reelaboraron ese traballo do ano 86 no 2000 nunha tese de doutoramento que ademais das probas realizadas con anterioridade incorporaron as probas de ADN, e volveron a determinar a idéntica procedencia de ambas cepas.</p>
+                </div>
+            </div>
+            <div class="slide" id="slide3">
+                    <div class='fotosperfil' id='joseluis'></div>
+                    <div class='contido' id='perfilcontido'>
+                        <h2>#PERFIL: José Luis Santiago</h2>
+                        <a class='prememais' id="moveTo402" href="#">Atrás</a>
+                        <p>Científico titular da Misión Biolóxica de Galicia (CSIC Pontevedra) leva toda unha vida adicada ao estudo do viño. Ten ás súas costas máis de 30 estudos sobre clons de cepas, incluíndo, como non, ao caíño tinto nestes estudos.</p>
+                        <p>Ademais, ten unha tese de doutoramento sobre o caíño tinto, realizado no ano 2000 que conclúe que as dúas variedades de cada un dos lados da ría de Pontevedra son, sen ningún tipo de dúbida, a mesma uva.</p>
+                    </div>
+            </div> 
+        </div>
+        <div class="section fp-auto-height-responsive" id="section4">
+            <div class="slide active" id="slide1">
+                <div class='contido'>
+                    <h2>Sobre nós</h2>
+                    <p>Desliza á dereita ou preme no seguinte botón para coñecer ao noso equipo.</p>
+                    <a class='prememais' id="moveTo51" href="#">Coñécenos!</a>
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+                <div class='fotosperfil nos' id='jessica'>
+                </div>
+                <div class='contido' id='perfilcontido'>
+                    <h2>Jessica Fernández Cerdeira</h2>
+                    <a class='prememais' id="moveTo50" href="#">Atrás</a><br><a class='prememais' href="https://instagram.com/jeessicafdez">Instagram</a><br><a class='prememais' href="https://twitter.com/jeessicafdez">Twitter</a>
+                    <p>Gravación e montaxe de contidos audiovisuais e redacción.</p>
+                </div>
+            </div>
+            <div class="slide" id="slide3">
+                <div class='fotosperfil nos' id='sergio'>
+                </div>
+                <div class='contido' id='perfilcontido'>
+                    <h2>Sergio Conde Campos</h2>
+                    <a class='prememais' id="moveTo502" href="#">Atrás</a><br><a class='prememais' href="https://instagram.com/zheghio">Instagram</a><br><a class='prememais' href="https://twitter.com/sergicela">Twitter</a>
+                    <p>Documentación, redacción, gravación e composición de materiais multimedia.</p>
+                </div>
+            </div>
+            <div class="slide" id="slide4">
+                <div class='fotosperfil nos' id='carmendelrio'>
+                </div>
+                <div class='contido' id='perfilcontido'>
+                    <h2>Carmen del Río Ferreiro</h2>
+                    <a class='prememais' id="moveTo503" href="#">Atrás</a><br><a class='prememais' href="https://twitter.com/carmen_celeste_">Twitter</a>
+                    <p>Documentación, redacción e redes sociais.</p>
+                </div>
+            </div>
+            <div class="slide" id="slide5">
+                <div class='fotosperfil nos' id='pedro'>
+                </div>
+                <div class='contido' id='perfilcontido'>
+                    <h2>Pedro Costa Manteiga</h2>
+                    <a class='prememais' id="moveTo504" href="#">Atrás</a>
+                    <p>Documentación, multimedia, webmaster, deseño web e gráfico.</p>
+                </div>
+            </div>
+            </div>
+        <div class="section fp-auto-height-responsive" id="footer">
+            <div class='footercontido'>
+                <div id='logofooter'>
+                    <img data-src="https://i.ibb.co/7KcZGBw/logomaisqueunnome.png" alt="# Máis que un nome">
+                </div>
+                <div id='textofooter'>
+                <p>Este proxecto foi realizado por alumnado de Xornalismo da Facultade de Ciencias de Comunicación da Universidade de Santiago de Compostela. Estilos e código feitos por Pedro Costa Manteiga. O proxecto e o seu código teñen unha licencia GPLv3. As diferentes ferramentas insertadas no proceso de elaboración desta reportaxe contan coa súa respectiva licencia comercial, dispoñible nas súas webs. Para máis información sobre as licencias e o código, visitar o <a href="https://github.com/pedcm/maisqueunnome">repositorio do proxecto en Github</a>.</p>
+                <p>O proxecto está apoiado na bolsa <a href="https://education.github.com/pack">Github for Students</a> e na ferramenta <a href="https://github.com/alvarotrigo/fullPage.js">fullPage.js</a>. Grazas a Mónica por ensinarme a traballar con HTML e CSS.</p>
+                </div>
             </div>
         </div>
     </div>
-   
+    <!-- Botón de compartir -->
+    <nav class="botonwrap noselect">
+        <input type="checkbox" id="checkcompartir">
+        <label class="boton" for='checkcompartir'><i class="material-icons openshare">share</i><i class="material-icons closeshare">close</i></label>
+        <div class="botonwrap2">
+        <a href="mailto:exemplo@exemplo.gal?&subject=&body=https://maisqueunno.me Bótalle unha ollada a este proxecto multimedia sobre dous viños moi peculiares!" class="boton" target="_blank"><i class="material-icons">mail</i></a>
+        <a href="https://twitter.com/intent/tweet?text=Bot%C3%A1delle%20unha%20ollada%20a%20este%20proxecto%20multimedia%20sobre%20dous%20vi%C3%B1os%20moi%20peculiares!%20via%20%40maisqueunnome&url=https%3A%2F%2Fmaisqueunno.me" class="boton" target="_blank"> <i class="fab fa-twitter"></i> </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://maisqueunno.me" class="boton" target="_blank"> <i class="fab fa-facebook"></i> </a>
+        <a href="https://wa.me/?text=https%3A%2F%2Fmaisqueunno.me%20B%C3%B3talle%20unha%20ollada%20a%20este%20proxecto%20multimedia%20sobre%20dous%20vi%C3%B1os%20moi%20peculiares!" class="boton" target="_blank"> <i class="fab fa-whatsapp"></i> </a>
+        <a href="https://instagram.com/maisqueunnome" class="boton" target="_blank"> <i class="fab fa-instagram"></i> </a>
+        </div>
+    </nav>
+ 
+    <!-- Scripts -->
         
-    <script type="text/javascript" src="js/scrolloverflow.js"></script>    
-    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript" src="js/scrolloverflow.min.js"></script>    
+    <script type="text/javascript" src="js/fullpage.min.js"></script>
     <script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-        verticalCentered: true,
-        scrollOverflow: true
-    });
-    </script>
+    function initialization(){
+        var myFullpage = new fullpage('#fullpage', {
+            verticalCentered: true,
+            sectionsColor: ['#000000', '#ffffff', '#ffffff', '#ffffff', '#ffffff', '#ffffff'],
+            scrollOverflow: true,
+            anchors: ['inicio','tintafemia','cainotinto','auva','sobrenos','acercade'],
+            controlArrows: false,
+            menu: '#menu',
+            LazyLoading: true
+        });
+    }
     
-</body>
+//fullPage.js initialization
+	initialization();
+        
+    document.querySelector('#moveTo21').addEventListener('click', function(e){
+            e.preventDefault();
+            fullpage_api.moveTo(2, 1);
+        });
 
+    document.querySelector('#moveTo22').addEventListener('click', function(e){
+            e.preventDefault();
+            fullpage_api.moveTo(2, 2);
+        });
+
+    document.querySelector('#moveTo20').addEventListener('click', function(e){
+            e.preventDefault();
+            fullpage_api.moveTo(2, 0);
+        });
+        
+    document.querySelector('#moveTo202').addEventListener('click', function(e){
+            e.preventDefault();
+            fullpage_api.moveTo(2, 0);
+        });
+    
+    document.querySelector('#moveTo31').addEventListener('click', function(e){
+            e.preventDefault();
+            fullpage_api.moveTo(3, 1);
+        });
+
+    document.querySelector('#moveTo32').addEventListener('click', function(e){
+            e.preventDefault();
+            fullpage_api.moveTo(3, 2);
+        });
+
+    document.querySelector('#moveTo30').addEventListener('click', function(e){
+            e.preventDefault();
+            fullpage_api.moveTo(3, 0);
+        });
+        
+    document.querySelector('#moveTo302').addEventListener('click', function(e){
+            e.preventDefault();
+            fullpage_api.moveTo(3, 0);
+        });
+        
+    document.querySelector('#moveTo41').addEventListener('click', function(e){
+            e.preventDefault();
+            fullpage_api.moveTo(4, 1);
+        });
+
+    document.querySelector('#moveTo42').addEventListener('click', function(e){
+            e.preventDefault();
+            fullpage_api.moveTo(4, 2);
+        });
+
+    document.querySelector('#moveTo40').addEventListener('click', function(e){
+            e.preventDefault();
+            fullpage_api.moveTo(4, 0);
+        });
+        
+    document.querySelector('#moveTo402').addEventListener('click', function(e){
+            e.preventDefault();
+            fullpage_api.moveTo(4, 0);
+        });
+        
+    document.querySelector('#moveTo51').addEventListener('click', function(e){
+            e.preventDefault();
+            fullpage_api.moveTo(5, 1);
+        });
+    
+    document.querySelector('#moveTo50').addEventListener('click', function(e){
+            e.preventDefault();
+            fullpage_api.moveTo(5, 0);
+        });
+        
+    document.querySelector('#moveTo502').addEventListener('click', function(e){
+            e.preventDefault();
+            fullpage_api.moveTo(5, 0);
+        });
+        
+    document.querySelector('#moveTo503').addEventListener('click', function(e){
+            e.preventDefault();
+            fullpage_api.moveTo(5, 0);
+        });
+        
+    document.querySelector('#moveTo504').addEventListener('click', function(e){
+            e.preventDefault();
+            fullpage_api.moveTo(5, 0);
+        });
+        
+    </script>
+
+    <script src="https://kit.fontawesome.com/02d41a1cde.js" crossorigin="anonymous"></script>
+   
+    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+
+ 
+</body>
 </html> 
