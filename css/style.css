@@ -35,21 +35,6 @@
 
 }
 
-/* Liberation Sans Bold */
-@font-face {
-    font-family: 'liberationsansbold';
-    src: url('../fonts/liberationsansbold/LiberationSans-Bold-webfont.eot');
-    src: url('../fonts/liberationsansbold/LiberationSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/liberationsansbold/LiberationSans-Bold-webfont.woff2') format('woff2'),
-         url('../fonts/liberationsansbold/LiberationSans-Bold-webfont.woff') format('woff'),
-         url('../fonts/liberationsansbold/LiberationSans-Bold-webfont.ttf') format('truetype'),
-         url('../fonts/liberationsansbold/LiberationSans-Bold-webfont.svg#liberation_sansbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
 /* Configuración da web */
 
 .section {
@@ -193,9 +178,10 @@ p {
 }
 
 b {
-    font-family: 'liberationsansbold','Arial';
+    font-family: 'liberationsans','Arial';
     line-height: 1.33em;
     color: #444444;
+    font-weight: 900;
 }
 
 
